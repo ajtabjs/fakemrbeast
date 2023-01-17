@@ -19,13 +19,19 @@
     You've been MrBeasted!
     </h1>
      <script src="beast.js"></script>  
-    <audio id="musicplayer" autoplay>
-  <source src="https://cdn.glitch.global/788ed3c5-1869-42bb-9e05-11c8fba0acdf/MR_BEAST.ogg?v=1673927654879" />
-</audio>
 
     
      
-     <script src="auto.js"></script>  
+     <script>
+    
+  document.querySelector("h1").addEventListener("click", () => {
+    document.querySelector("video").play();
+  });
+
+  window.onload =document.querySelector("h1").click();
+
+
+    </script>  
    
   </body>
 </html>

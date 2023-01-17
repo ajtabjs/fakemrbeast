@@ -5,7 +5,7 @@ function beast(){
 var beast = document.createElement("video");  
 beast.setAttribute("src", "https://cdn.glitch.me/788ed3c5-1869-42bb-9e05-11c8fba0acdf/MR_BEAST.mp4?v=1673926556697");  
 beast.setAttribute("id", "beast"); 
-beast.setAttribute("controls", "autoplay"); 
+beast.setAttribute("autoplay", "autoplay"); 
 beast.setAttribute("width", "650"); 
 beast.setAttribute("autoplay", "muted");
 beast.setAttribute("autostart", "true"); 

@@ -1,15 +1,10 @@
-/* function auto() {
-  document.querySelector("video").addEventListener("click", () => {
+ function auto() {
+  document.querySelector("h1").addEventListener("click", () => {
     document.querySelector("video").play();
   });
 
-  document.querySelector("video").click();
-} */
+  document.querySelector("h1").click();
+} 
 
-var video = document.querySelector('video');
-video.muted = true;
-video.play()
+auto();
 
-video.muted = false;
-
-//auto();
