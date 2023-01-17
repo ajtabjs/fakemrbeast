@@ -8,7 +8,7 @@ function auto() {
         document.querySelector('video').play();
     });
   
-  document.getElementById("beast").click();
+  document.getElementByTagName("body").click();
 }
 
 function beast(){
