@@ -18,19 +18,25 @@
     <h1>
     You've been MrBeasted!
     </h1>
-     <script src="beast.js"></script>  
+    <video id="beast" width="650" controls autoplay muted>
+  <source src="https://cdn.glitch.me/788ed3c5-1869-42bb-9e05-11c8fba0acdf/MR_BEAST.mp4?v=1673926556697" type="video/mp4">
+  <source src="https://cdn.glitch.global/788ed3c5-1869-42bb-9e05-11c8fba0acdf/MR_BEAST.ogg?v=1673927654879" type="video/ogg">
+  Your browser does not support the video tag.
+</video> 
 
     
      
      <script>
-    
-  document.querySelector("h1").addEventListener("click", () => {
+
+       var delayInMilliseconds = 2000; //1 second
+
+setTimeout(function() {
+  var vid = document.getElementById("beast");
+vid.muted = false;
     document.querySelector("video").play();
-  });
-
-  window.onload = document.querySelector("h1").click();
-       console.log("this works")
-
+}, delayInMilliseconds);
+       
+       
 
     </script>  
    
