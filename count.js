@@ -1,4 +1,3 @@
-const currentColor = localStorage.getItem('beasted');
 var counterContainer = document.querySelector("#count");
 var count = localStorage.getItem("beasted");
 
@@ -14,5 +13,8 @@ counterContainer.innerHTML = count;
 
 
 
-if 
+if (count = 1) {
+  
+  
+}
 // Adding onClick event listener

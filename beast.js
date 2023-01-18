@@ -1,5 +1,6 @@
 console.log("MR BEAST");
 console.log("To whoever sees this, this webpage is a joke. Made by AJTalksAboutStuff")
+alert("");
 
 function beast(){
 var beast = document.createElement("video");  

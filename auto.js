@@ -1,4 +1,6 @@
- function auto() {
+alert("");
+
+function auto() {
   document.querySelector("#text").addEventListener("click", () => {
     document.querySelector("video").play();
   });
