@@ -1,11 +1,17 @@
+function div() {
+var text = document.createElement("div");  
+text.setAttribute("id", "statusbox");
+   text.style.borderColor = "black";
+  text.style.borderColor = "black";
+}
+
+
 function pong(){
 var text = document.createElement("p");  
-text.setAttribute("contenteditable",  "true" );  
-text.setAttribute("id", "beast"); 
-text.setAttribute("controls", "autoplay"); 
-text.setAttribute("width", "650"); 
-text.setAttribute("autoplay", "muted");
-text.setAttribute("autostart", "true"); 
-document.body.appendChild(text);
+text.setAttribute("contenteditable","true");  
+text.style.fontFamily("Verdana, Trebuchet MS, Arial, Helvetica, sans-serif");
+  text.style.postition("absolute");
+  text.style.float("right");
+text.setAttribute("id", "status");
+$('#iframecontainer').append(text);
 }
-pong();
