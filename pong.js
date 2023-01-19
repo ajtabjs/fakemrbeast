@@ -13,7 +13,7 @@ function pong(){
 var text = document.createElement("p");  
 text.setAttribute("contenteditable","true");  
 text.style.fontFamily = "Verdana, Trebuchet MS, Arial, Helvetica, sans-serif";
-  text.innerHTML = "edit status here!"
+  text.innerHTML = "edit status here!";
 text.setAttribute("id", "status");
   text.style.position = "absolute";
   text.style.float = "right";
