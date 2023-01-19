@@ -1,9 +1,10 @@
 function div() {
 var div = document.createElement("div");  
 div.setAttribute("id", "statusbox");
+   document.body.appendChild(div);
    div.style.borderRadius = "10px";
   div.style.borderColor = "black";
-   document.body.appendChild(div);
+  console.log("div created")
 }
 div();
 
@@ -11,10 +12,12 @@ div();
 function pong(){
 var text = document.createElement("p");  
 text.setAttribute("contenteditable","true");  
-//text.style.fontFamily("Verdana, Trebuchet MS, Arial, Helvetica, sans-serif");
-  text.style.position("absolute");
-  text.style.float("right");
+text.style.fontFamily = "Verdana, Trebuchet MS, Arial, Helvetica, sans-serif";
+  text.innerHTML = "edit status here!"
 text.setAttribute("id", "status");
-$('#statusbox').append(text);
+  text.style.position = "absolute";
+  text.style.float = "right";
+  $('#statusbox').append(text);
+  console.log("text created!")
 }
 pong();
