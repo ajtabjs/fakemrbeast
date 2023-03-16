@@ -1,3 +1,6 @@
+console.log("MR BEAST");
+console.log("To console debuggers seeing this, this webpage is a joke. Made by AJTalksAboutStuff")
+
 function auto() {
   document.querySelector("body").addEventListener("click", () => {
     document.querySelector("video").play();
@@ -15,9 +18,9 @@ var browserName = (function (agent) {
             case agent.indexOf("edge") > -1: return "MS Edge";
             case agent.indexOf("edg/") > -1: return "Edge ( chromium based)";
             case agent.indexOf("opr") > -1 && !!window.opr: return "Opera";
-            case agent.indexOf("chrome") > -1 && !!window.chrome: return vid.setAttribute("autoplay", muted);
+            case agent.indexOf("chrome") > -1 && !!window.chrome: return vid.setAttribute("muted", "true");
 
-            case agent.indexOf("firefox") > -1: return document.querySelector("video").play();
+            case agent.indexOf("firefox") > -1: return vid.setAttribute("muted", "false") & document.querySelector("video").play();
             default: return "other";
         }
-    })(window.navigator.userAgent.toLowerCase());
+    })();
