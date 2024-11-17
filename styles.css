@@ -1,0 +1,75 @@
+header {
+    padding-bottom: 10px;
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.gradient-background {
+  background: linear-gradient(300deg,#178f4d,#37c3a2,#25464c);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body {
+    background-color:#2d3339;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    font-family:"Pixelify Sans";
+    color: white; 
+    text-align: center;
+}
+  
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.dot {
+    font-size: 24px;
+    display: inline;
+}
+
+.visit {
+    font-family:OnestBold;
+    display: inline;
+}
+
+.video-web
+{
+    
+      width:720px;
+    height:404px;
+}
+  
+  @keyframes smooth-appear {
+    to{
+      bottom: 20px;
+      opacity:1;
+    }
+  }
+  .container {
+    background-color: #6b6b6b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:white;
+    padding: 10px;
+    position: fixed;
+    bottom: -100%;
+    opacity:0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    animation: smooth-appear 1s ease forwards;
+    font-size: 16px;
+  }
