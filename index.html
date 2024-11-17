@@ -14,11 +14,19 @@
     
   </head>
   <body>
-   
+   <div id="cookie-notice">
+    <h1>We Use Cookies 🍪</h1>
+    <p>This site uses cookies to personalize your content. Please choose your cookie preferences to continue.</p>
+    <div class="buttons">
+      <button id="accept">Accept</button>
+      <button id="deny">Deny</button>
+</div>
+   </div>
+   <div id="lol">
     <h1 id="text">
     You've been MrBeasted!
     </h1>
-    <video class="video-js video-web"
+    <video id="main-vid" class="video-js video-web beast"
     preload="auto"
             data-setup="{}" controls>
   <source src="MR_BEAST.mp4" type="video/mp4">
@@ -32,8 +40,32 @@
     <br>
     <p>Original video <a href="https://youtu.be/KouvBEP0PgI" target="_blank">here</a>.</p>
     <br>
-     
+    </div>
+      <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+<script>
+     var player = videojs('main-vid');
+  var accept = document.getElementById("accept");
+  var deny = document.getElementById("deny");
+  var cookies = document.getElementById("cookie-notice");
+  var main = document.getElementById("lol");
+  const vid = document.getElementsByClassName("beast");
 
-    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+  accept.addEventListener('click', function() {
+
+    cookies.style.display = 'none';
+        main.style.display = 'block';
+
+       player.play();
+  });
+
+  deny.addEventListener('click', function() {
+
+cookies.style.display = 'none';
+    main.style.display = 'block';
+
+   player.play();
+});
+    </script>
+   
   </body>
 </html>

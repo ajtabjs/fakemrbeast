@@ -2,7 +2,44 @@ header {
     padding-bottom: 10px;
  }
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+a {
+
+color:#5BCEFA;
+
+}
+
+#lol{
+
+display:none;
+
+}
+
+button{
+
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff6f00;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+#cookie-notice{
+    width:100%;
+    height:100%;
+    color:white;
+    flex-direction: column;
+    text-align:center;
+    background:#2d3339;
+    justify-content: center;
+
+
+}
 
 .gradient-background {
   background: linear-gradient(300deg,#178f4d,#37c3a2,#25464c);
